@@ -8,12 +8,12 @@ class StartButton extends StatelessWidget {
   @override
   Widget build(context) {
     return OutlinedButton(
-      onPressed: null,
+      onPressed: () {},
+      style: OutlinedButton.styleFrom(
+        foregroundColor: Colors.white,
+      ),
       child: Text(
         labelText,
-        style: const TextStyle(
-          color: Colors.white,
-        ),
       ),
     );
   }

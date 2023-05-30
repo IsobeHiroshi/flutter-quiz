@@ -1,12 +1,22 @@
-import "package:adv_basics/main_container.dart";
+import "package:adv_basics/start_screen.dart";
 import "package:flutter/material.dart";
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        body: MainContainer(
-          Color.fromARGB(255, 79, 31, 163),
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 73, 23, 160),
+                Color.fromARGB(255, 106, 51, 200)
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+          child: const StartScreen(),
         ),
       ),
     ),
