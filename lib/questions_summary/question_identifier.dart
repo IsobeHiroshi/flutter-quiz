@@ -23,6 +23,9 @@ class QuestionIdentifier extends StatelessWidget {
         child: Text(
           (identifier + 1).toString(),
           textAlign: TextAlign.center,
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );

@@ -1,6 +1,5 @@
 import 'package:adv_basics/questions_summary/question_identifier.dart';
 import 'package:adv_basics/questions_summary/summary_item.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class QuestionsSummary extends StatelessWidget {
@@ -30,9 +29,10 @@ class QuestionsSummary extends StatelessWidget {
                     ),
                     const SizedBox(width: 20),
                     SummaryItem(
-                        data: data,
-                        userColor: userColor,
-                        correctColor: correctColor)
+                      data: data,
+                      userColor: userColor,
+                      correctColor: correctColor,
+                    )
                   ]);
             },
           ).toList(),
